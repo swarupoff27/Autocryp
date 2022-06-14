@@ -47,6 +47,20 @@ body {
     outline: 2px solid rgb(1, 255, 1);
 }
 
+.btn {
+    text-align: center;
+    background-color: #1fdb84;
+    color: white;
+    font-weight: bold;
+    border-radius: 5px 0 5px 0;
+    border: none;
+}
+
+.btn:hover {
+    -webkit-box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
+    -moz-box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
+    box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
+}
 
 
 main {
@@ -114,16 +128,8 @@ nav a {
 .btn__sm {
     width: 120px;
     line-height: 40px;
-    text-align: center;
-    border-radius: 5px 0 5px 0;
-    background-color: #1fdb84;
 }
 
-.btn__sm:hover {
-    -webkit-box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
-    -moz-box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
-    box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
-}
 
 /* header *************************************************/
 
@@ -177,24 +183,12 @@ nav a {
 .btn__md {
     display: inline-block;
     font-size: 18px;
-    font-weight: bold;
     width: 200px;
-    height: 60px;
     line-height: 60px;
     margin-top: 35px;
-    text-align: center;
-    border-radius: 5px 0 5px 0;
-    color: white;
-    background-color: #1fdb84;
-    border: none;
 
 }
 
-.btn__md:hover {
-    -webkit-box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
-    -moz-box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
-    box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
-}
 
 .hero__img {
     background-color: #313a5a;
@@ -204,12 +198,6 @@ nav a {
     justify-content: flex-end;
 
 }
-
-.hand {
-    width: 463px;
-    height: 792px;
-}
-
 
 
 /* hero ****************************************************/
@@ -292,6 +280,7 @@ h2 {
     font-weight: bold;
     line-height: 64px;
     color: #32325c;
+    padding: 0 20px;
 }
 
 .pricing__package {
@@ -306,13 +295,11 @@ h2 {
 
 .pricing__package :nth-child(1) {
     width: 162px;
-    color: #1fdb84;
-    /* line-height: 60px; */
     margin-right: -4px;
+    color: #1fdb84;
     border: 1px solid #aefdd9;
     border-radius: 5px 0 0 5px;
     background-color: white;
-
 }
 
 .pricing__package :nth-child(2) {
@@ -340,6 +327,7 @@ h2 {
 }
 
 .pricing__cards article:nth-child(1),
+.pricing__cards article:nth-child(2),
 .pricing__cards article:nth-child(3) {
 
     padding: 56px 60px;
@@ -347,10 +335,6 @@ h2 {
 
 }
 
-.pricing__cards article:nth-child(2) {
-    padding: 56px 60px;
-    position: relative;
-}
 
 .card__title {
     font-size: 24px;
@@ -367,20 +351,21 @@ h2 {
     color: #1fdb84;
 }
 
-.card__rate :nth-child(2) {
+
+.card__rate :nth-child(2),
+.card__details  {
     font-size: 16px;
     line-height: 32px;
     letter-spacing: 0.18px;
-    margin-top: 13px;
     color: #5b6c94;
+   
 }
 
+.card__rate :nth-child(2){
+    margin-top: 13px;
+}
 
 .card__details {
-    color: #5b6c94;
-    font-size: 16px;
-    line-height: 32px;
-    letter-spacing: 0.18px;
     margin-top: 60px;
 }
 
@@ -398,7 +383,6 @@ h2 {
     text-decoration: none;
     font-size: 16px;
     letter-spacing: 1px;
-    font-weight: bold;
     position: absolute;
     left: 0;
     right: 0;
@@ -406,18 +390,8 @@ h2 {
     margin: auto;
     width: 255px;
     line-height: 60px;
-    border-radius: 5px 0 5px 0;
-    color: white;
-    background-color: #1fdb84;
-    border: none;
-
 }
 
-.btn__lg:hover {
-    -webkit-box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
-    -moz-box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
-    box-shadow: 0px 8px 34px 0px rgba(31, 219, 132, 0.6);
-}
 
 .pricing__cards article:hover {
     background-color: white;
@@ -459,8 +433,6 @@ h2 {
 }
 
 .testimonials__left h3 {
-    width: 310px;
-    height: 104px;
     font-size: 40px;
     font-weight: 500;
     line-height: 48px;
@@ -485,14 +457,26 @@ h2 {
 }
 
 
-.testimonials__right article:nth-child(1) {
+.testimonials__right article:nth-child(1),
+.testimonials__right article:nth-child(2),
+.testimonials__right article:nth-child(3) {
     width: 420px;
     min-width: 420px;
     height: 500px;
-    background-color: #1fdb84;
     padding: 80px 50px;
     margin-right: 40px;
 }
+
+
+.testimonials__right article:nth-child(1) {
+    background-color: #1fdb84;
+}
+
+.testimonials__right article:nth-child(2),
+.testimonials__right article:nth-child(3) {
+    background-color: white;
+}
+
 
 .testimonials__right article:nth-child(1):hover {
     -webkit-box-shadow: 12px 12px 40px 0px rgba(31, 219, 132, 1);
@@ -501,17 +485,6 @@ h2 {
 }
 
 
-.testimonials__right article:nth-child(2),
-.testimonials__right article:nth-child(3) {
-    width: 420px;
-    min-width: 420px;
-    height: 500px;
-    background-color: white;
-    padding: 80px 50px;
-    margin-right: 40px;
-
-}
-
 .testimonials__right article:nth-child(2):hover,
 .testimonials__right article:nth-child(3):hover {
     -webkit-box-shadow: 12px 12px 40px 0px rgba(255, 255, 255, 0.3);
@@ -519,18 +492,21 @@ h2 {
     box-shadow: 12px 12px 40px 0px rgba(255, 255, 255, 0.3);
 }
 
-.testimonials__right article:nth-child(1) p {
+.testimonials__right article:nth-child(1) p,
+.testimonials__right article:nth-child(2) p,
+.testimonials__right article:nth-child(3) p{
     font-size: 18px;
     line-height: 36px;
     margin-top: 23px;
+}
+
+
+.testimonials__right article:nth-child(1) p {
     color: white;
 }
 
 .testimonials__right article:nth-child(2) p,
 .testimonials__right article:nth-child(3) p {
-    font-size: 18px;
-    line-height: 36px;
-    margin-top: 23px;
     color: #5b6c94;
 }
 
@@ -608,37 +584,6 @@ h2 {
     padding: 0 40px;
 }
 
-.amazon {
-    width: 138px;
-    height: 41px;
-}
-
-.etsy {
-    width: 89px;
-    height: 44px;
-}
-
-.clickbank {
-    width: 153px;
-    height: 29px;
-}
-
-.n {
-    width: 59px;
-    height: 50px;
-}
-
-.youtube {
-    width: 139px;
-    height: 31px;
-}
-
-.kickstarter {
-    width: 227px;
-    height: 27px;
-}
-
-
 
 
 /* clients *************************************************/
@@ -649,12 +594,9 @@ h2 {
 footer {
     padding-bottom: 100px;
     background-color: #f8f9fc;
-}
-
-footer p,
-footer div {
     text-align: center;
 }
+
 
 footer a,
 footer p {
@@ -687,14 +629,21 @@ footer div {
 
     .hero {
         min-height: 1400px;
-        /* height: 100%; */
     }
 
     .hero__content {
         height: 1400px;
-        /* min-height:100%; */
         justify-content: space-between;
         flex-direction: column;
+        text-align: center;
+    }
+
+    .hero__text h1 {
+        width: 100%;
+    }
+
+    .hero__text p {
+        width: 100%;
     }
 
     .hero__text {
@@ -702,9 +651,6 @@ footer div {
     }
 
     .hero__img {
-        /* min-height: 792px; */
-        /* height: 792px; */
-        /* height: auto; */
         align-items: center;
     }
 
@@ -715,7 +661,6 @@ footer div {
     .benefits__cards article {
         width: 257px;
         height: 306px;
-
     }
 
     .pricing__cards {
@@ -729,8 +674,6 @@ footer div {
 
     .client__icons {
         flex-direction: column;
-        /* margin-top:50px; */
-
     }
 
     .client__icons img {
@@ -752,17 +695,7 @@ footer div {
 
     .hero__content {
         height: 1100px;
-        text-align: center;
     }
-
-    .hero__text h1 {
-        width: 100%;
-    }
-
-    .hero__text p {
-        width: 100%;
-    }
-
 
     .hand {
         width: 300px;
@@ -835,31 +768,26 @@ footer div {
     }
 
     .testimonials__left img {
-        top:0;
-        right: 15%;
+        top: 0;
+        right: 25%;
         width: 30vw;
         height: auto;
+        /* border: 5px solid red; */
     }
 
     .testimonials__left h3 {
-        width: 100%;
-        height: 100%;
-        text-align: center;
-        position: absolute;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        top: 0px;
-        left: 0;
-        right: 0;
-        margin: auto;
-
+        /* border: 5px solid green; */
+        /* width: auto; */
+        height: auto;
+        top: 10%;
+        left: 15%;
     }
 
     .testimonials__right {
         background-color: #313a5a;
         width: 100%;
-        padding: 100px 0;
+        padding: 80px 0;
+        margin-top: 50px;
 
     }
 
@@ -943,6 +871,7 @@ footer div {
 
     .testimonials__left h3 {
         font-size: 28px;
+        line-height:30px;
     }
 
     footer div {
@@ -992,6 +921,12 @@ footer div {
         height: 100%;
     }
 
+
+    .testimonials__left h3 {
+       font-size: 20px;
+       line-height:25px;
+
+    }
 
     .testimonials__right article:nth-child(1) {
         width: 300px;
