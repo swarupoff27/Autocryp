@@ -16,20 +16,36 @@
             <nav>
                 <a class="title" href="javascript:void(0)">Autocryp</a>
 
-                <div class="menu">
+                <div class="menu " id="menu">
                     <a href="#benefit">Benefit</a>
                     <a href="#pricing">Pricing</a>
                     <a href="#testimonials">Testimonials</a>
                     <a href="#client">Client</a>
                 </div>
 
-                <div class="login__register ">
+                <div class="login__register " id="login__register">
                     <a href="javascript:void(0)">Login</a>
                     <a class="btn btn__sm" href="javascript:void(0)">Register</a>
                 </div>
             </nav>
 
-            <a href="javascript:void(0)"><i class="fa-solid fa-bars "></i></a>
+            <a id="hamburger-icon" href="javascript:void(0)"><i class="fa-solid fa-bars "></i></a>
+
+            <div class="ham" id="ham">
+                <div class="hamburger-menu" id="hamburger-menu">
+                    <a id="benefit-id" href="#benefit">Benefit</a>
+                    <a id="pricing-id" href="#pricing">Pricing</a>
+                    <a id="testimonials-id" href="#testimonials">Testimonials</a>
+                    <a id="client-id" href="#client">Client</a>
+
+                    <div class="hamburger-menu__login__register ">
+                        <a class="btn btn__sm" href="javascript:void(0)">Login</a>
+                        <a class="btn btn__sm" href="javascript:void(0)">Register</a>
+                    </div>
+                </div>
+            </div>
+
+
 
         </div>
     </header>
@@ -71,21 +87,21 @@
 
                     <div class="benefits__cards ">
 
-                        <article >
+                        <article>
                             <img src="images/locker.png" alt="Locker.">
                             <p>Secure Every Transaction</p>
                             <p>Your account is protected by Multifactor Authentication using a combination of email, SMS
                                 and Google Authenticator.</p>
                         </article>
 
-                        <article >
+                        <article>
                             <img src="images/game.png" alt="Gaming Console.">
                             <p>Easiest To Use</p>
                             <p>You only need 1 account to do all Bitcoin transactions whether it is buying, selling,
                                 investing or trading.</p>
                         </article>
 
-                        <article >
+                        <article>
                             <img src="images/rocket.png" alt="Rocket.">
                             <p>Fastest Mining</p>
                             <p>The Rupiah deposit can be processed instantly and Rupiah withdrawal is processed in less
@@ -179,36 +195,56 @@
                         <h3>What<br>Customers Say</h3>
                     </div>
 
-                    <div class="testimonials__right ">
-                        <div class="testimonials__right__cards ">
-                            <article>
-                                <img src="images/whitequotes.png" alt="small white quotes.">
-                                <p>"I started driving with Uber because I liked the idea that my own car could make me
-                                    money. After just about a couple weeks, I saw that this was something I wanted to do
-                                    permanently."</p>
-                                <p><b>Brandon Roger /</b><span> OWW Studio</span></p>
-                            </article>
-                            <article>
-                                <img src="images/greenquotes.png" alt="small green quotes.">
-                                <p>"I wanted something where I could meet new people and get out of the house. Uber has
-                                    helped with both of those things, plus I’m seeing new parts of the city I’ve never
-                                    seen before!"</p>
-                                <p><b>Sean Walker /</b><span> OWW Studio</span></p>
-                            </article>
-                            <article>
-                                <img src="images/greenquotes.png" alt="small green quotes.">
-                                <p>"Uber enables me to have the creative freedom for baking my cakes and also driving on
-                                    the side so I can make more money and also have my dream job."</p>
-                                <p><b>Jenny Harra /</b><span> OWW Studio</span></p>
-                            </article>
-                        </div>
+                    <div class="testimonials__right rb">
+                            <div class="testimonials__right__cards bb">
+                                <article class="test-1 green">
+                                    <img src="images/whitequotes.png" alt="small white quotes.">
+                                    <p>"I started driving with Uber because I liked the idea that my own car could make
+                                        me
+                                        money. After just about a couple weeks, I saw that this was something I wanted
+                                        to do
+                                        permanently."</p>
+                                    <p><b>Brandon Roger /</b><span> OWW Studio</span></p>
+                                </article>
+                                <article  class="test-2 white">
+                                    <img src="images/greenquotes.png" alt="small green quotes.">
+                                    <p>"I wanted something where I could meet new people and get out of the house. Uber
+                                        has
+                                        helped with both of those things, plus I’m seeing new parts of the city I’ve
+                                        never
+                                        seen before!"</p>
+                                    <p><b>Sean Walker /</b><span> OWW Studio</span></p>
+                                </article>
+                                <article class="test-3 white">
+                                    <img src="images/greenquotes.png" alt="small green quotes.">
+                                    <p>"Uber enables me to have the creative freedom for baking my cakes and also
+                                        driving on
+                                        the side so I can make more money and also have my dream job."</p>
+                                    <p><b>Jenny Harra /</b><span> OWW Studio</span></p>
+                                </article>
+                                <article class="test-4 white">
+                                    <img src="images/greenquotes.png" alt="small green quotes.">
+                                    <p>"Uber enables me to have the creative freedom for baking my cakes and also
+                                        driving on
+                                        the side so I can make more money and also have my dream job."</p>
+                                    <p><b>Jenny Harra /</b><span> OWW Studio</span></p>
+                                </article>
+                                <article class="test-5 white">
+                                    <img src="images/greenquotes.png" alt="small green quotes.">
+                                    <p>"Uber enables me to have the creative freedom for baking my cakes and also
+                                        driving on
+                                        the side so I can make more money and also have my dream job."</p>
+                                    <p><b>Jenny Harra /</b><span> OWW Studio</span></p>
+                                </article>
+                            </div>
+
 
                         <div class="card__indicator ">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            <span></span>
+                            <span id="ind-1" class="white"></span>
+                            <span id="ind-2"></span>
+                            <span id="ind-3"></span>
+                            <span id="ind-4"></span>
+                            <span id="ind-5"></span>
                         </div>
 
 
@@ -252,6 +288,7 @@
 
     </footer>
 
+    <script src="script.js"></script>
 </body>
 
 </html>
